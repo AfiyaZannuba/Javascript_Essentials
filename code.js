@@ -9,5 +9,17 @@ let programmer = {
     }
 }
 
-programmer.writeCode();
-programmer.drinksCoffee();
+function ProgrammerFunction(name, preferredLanguage) {
+    return {
+        name,
+        preferredLanguage,
+        writeCode: function () {
+            console.log(`${name}`);
+        }
+    }
+}
+
+const newFunction = ProgrammerFunction("Afiya", "React");
+newFunction.writeCode();
+
+
